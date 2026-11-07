@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Personal Website</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #1f2a44;
+  }
+  header {
+    background: linear-gradient(135deg, #1f4e79, #2e86c1);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 16px;
+    border-bottom: 6px solid #f39c12;
+  }
+  header h1 { margin: 0 0 6px; font-size: 32px; letter-spacing: 1px; }
+  header p { margin: 0; font-size: 16px; }
+  nav {
+    background-color: #17365a;
+    text-align: center;
+    padding: 6px;
+  }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 6px;
+    padding: 6px 14px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  nav a:hover { background-color: #f39c12; text-decoration: underline; }
+  main { max-width: 800px; margin: 20px auto; padding: 0 12px; }
+  section {
+    background-color: #ffffff;
+    margin: 6px 0 20px;
+    padding: 16px 20px;
+    border: 1px solid #d5dde8;
+    border-left: 6px solid #2e86c1;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  h2 { color: #1f4e79; border-bottom: 2px dashed #f39c12; padding-bottom: 4px; }
+  ul li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #c8d3e0; padding: 8px; text-align: left; }
+  th { background-color: #2e86c1; color: #ffffff; }
+  tr:nth-child(even) { background-color: #eef3f9; }
+  .btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .btn:hover { background-color: #d68910; }
+  footer {
+    text-align: center;
+    background-color: #17365a;
+    color: #ffffff;
+    padding: 14px;
+    margin-top: 30px;
+  }
+  @media (max-width: 600px) { header h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ola Shaheen</h1>
+  <p>Computer Science Student at J.U.S.T</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#courses">Courses</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a university student learning web development. In this course I learned HTML and CSS, and this website is my first project published on the internet using GitHub Pages.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML: structuring web pages</li>
+      <li>CSS: colors, fonts, borders, and layouts</li>
+      <li>GitHub: hosting a website</li>
+    </ul>
+  </section>
+
+  <section id="courses">
+    <h2>My Courses</h2>
+    <table>
+      <tr><th>Course</th><th>Topic</th></tr>
+      <tr><td>Web Development</td><td>HTML &amp; CSS</td></tr>
+      <tr><td>Programming</td><td>Problem solving</td></tr>
+      <tr><td>Databases</td><td>SQL basics</td></tr>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Find my work on GitHub:</p>
+    <a class="btn" href="https://github.com/olashaheen2006-code">My GitHub</a>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Ola Shaheen. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
